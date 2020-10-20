@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="./css/resume_hire.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/b8d631eee1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="navbar_out">
+            <nav class="navbar navbar-expand-lg container">
+                <a class="navbar-brand" href="./home.html">Home</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fa fa-navicon" style="color:#fff; font-size:28px;"></i></i></span>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                    <a class="nav-link" href="#">To Employers<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">To job seekers</a>
+                    </li>
+                </ul>
+                <!-- <form class="form-inline my-2 my-lg-0"> -->
+                    <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
+                    <a href="./resume.html"><button class="btn my-2 my-sm-0" type="submit">Создать Резюме</button></a>
+                <!-- </form> -->
+                </div>
+            </nav>
+        </div>
+
+       
+    </header>
+
+    <main class="w-100">
+        <div class="row container-fluid main_resume_paper">
+            <div class="col-2"></div>
+            <div class="col-10 colored_page resume_part">
+                <div class="resume">
+                    <form>
+                        <h5 class="title">Your requirements</h5>
+                        <div class="profile_form">
+                            <h3>1. Tell us what company?</h3>
+                            
+                            <div>
+                                <input type="text" value="" name="company_name" placeholder="Company name">
+                            </div>
+                            <br/>
+                            <div>
+                                <input type="text" value="" name="email" placeholder="E-mail">
+                                <input type="text" value="" name="phone" placeholder="Phone">
+                            </div>
+                            <br/>
+                            <div>
+
+                                <input type="text" value="" name="url" placeholder="URL to placeholder">
+                            </div>
+                            <!-- <div>
+                                <br/>
+                                <input type="file" value="" name="attached_resume" placeholder="Attach resume">
+                            </div> -->
+                        </div>
+
+                        <div class="specialist_form">
+                            <h3>You're looking employee?</h3>
+                            
+                            <div>
+                                <input type="text" value="" name="career" placeholder="Career objective">
+                            </div>
+                            <br/>
+
+                            <div>
+                                <input type="number" value="" name="salary" placeholder="Salary">
+                                <select>
+                                    <option>KZT</option>
+                                    <option>DLR</option>
+                                    <option>RUB</option>
+                                </select>
+                            </div>
+                            <br/>
+
+                        </div>
+
+
+                        <div class="main_skills_form">
+                            <h3>Main Skills...</h3>
+                            <div id="skills">
+                            </div>
+                            
+                            <br/>
+                            <div>
+                                <input type="text" name="skill" id="add_skill" placeholder="skill">
+                                <button class="btn my-2 my-sm-0" type="button" onclick="addSkill()">Keep</button>
+                            </div>
+                            
+                        </div>
+
+                        <div class="about_yourself_form">
+                            <h3>Tell something about career...</h3>
+                            <div>
+                                <textarea></textarea>
+                            </div>
+                        
+                        </div>
+                        <br/>
+                        <button class="btn my-2 my-sm-0">Submit</button>
+                        <button class="btn my-2 my-sm-0">Cancel</button>
+                    </form>
+                </div>
+                <br/>
+                <br/>
+                <br/>
+            </div>
+        </div>
+
+        
+    </main>
+
+    <footer>
+        <section>
+            <div class="section_div_first">
+                <div>
+                    <h5 class="footer_gmail">amazee@gmail.com</h5>
+                    <div class="footer_list">
+                        <div>
+                            <p>Amazee</p>
+                            <ul>
+                                 <li> Our vacancies </li>
+                                <li> Advertising on the site </li>
+                                <li> Requirement </li>
+                                <li>To investors</li>
+                            </ul>
+                        </div>
+                        <div>
+                             <p>Services for job seekers</p>
+                            <ul>
+                               <li> Resume Promotion </li>
+                                 <li> Auto-raising resume </li>
+                                 <li> I want to work for you </li>
+                                 <li> To Investors </li>
+                            </ul>
+                        </div>
+                        <div>
+                           <p>Help</p>
+                            <ul>
+                                <li> Company Directory </li>
+                                 <li> Working by profession </li>
+                                 <li> Contact University </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="social_line" >
+                        <a href="/" ><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="/" ><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href="/" ><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="/" ><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="/" ><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                        <a href="/" ><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                    
+                        
+                        <!-- <a href="#" ><img class="img-fluid  znak znak-4" src="{% static 'img\Image 15.png' %}" alt=""></a> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- <button class="btn get_in_touch">Get in touch</button> -->
+            
+            <h5></h5>
+        </section>
+
+        <div class="footer_about_us">
+              <h5>2020 Amazee Group</h5>
+            <h5>СToday on the site 21233 vacancies, 2 744 021 resumes, 64 527 companies</h5>
+        </div>
+
+
+    </footer>
+
+<script type="text/javascript">
+    const addSkillInput = document.getElementById("add_skill");
+    const addSkill = () => {
+        if(addSkillInput.value != ''){
+            document.getElementById("skills").innerHTML += 
+            `<div class="particular_skill" id="particular_skill_${addSkillInput.value}">
+                <span>${addSkillInput.value}</span>
+                <span class = "particular_skill_remove" onclick="removeSkill('particular_skill_${addSkillInput.value}')">
+                    <i class="far fa-trash-alt"></i>
+                    </span>
+            </div>`
+        }
+
+        addSkillInput.value = "";
+    }
+
+    const removeSkill = (id) => {
+        // alert(id);
+        document.getElementById(id).style.display = "none"; 
+    }
+</script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
